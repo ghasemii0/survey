@@ -10,5 +10,51 @@
   </head>
   <body>
 
+
+    <div class="container">
+      <form id="survey">
+      <h4>What's your favorite drink out of this four?</h4>
+        <select class="form-control" id="beverage">
+          <option value="coffee">Coffee</option>
+          <option value="tea">Tea</option>
+          <option value="kombucha">Kombucha</option>
+          <option value="water">Water</option>
+        </select>
+        <div id="iceCream" class="radio">
+          <label>
+            <input type="radio" name="flavor" value="chocolate" checked>
+            Chocolate
+          </label>
+        </div>
+        <div class="radio">
+          <label>
+            <input type="radio" name="flavor" value="vanilla">
+            Vanilla
+          </label>
+        </div>
+        <div class="radio">
+          <label>
+            <input type="radio" name="flavor" value="cookiesandcream">
+            Cookies & Cream
+          </label>
+        </div>
+
+        <div class="form-group">
+        <label for="born">Date of birth:</label>
+        <input id="born" class="form-control" type="date">
+        </div>
+
+        <div class="form-group">
+        <label for="color">What is your favorite color?</label>
+        <input id="color" class="form-control" type="color">
+        </div>
+
+
+        <button type="submit" class="btn">submit</button>
+      </form>
+      <div>
+        <p class="result"></p>
+      </div>
+    </div>
   </body>
 </html>
